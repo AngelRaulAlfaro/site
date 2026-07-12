@@ -130,6 +130,7 @@
       transition: all 0.25s;
     }
     .btn-outline:hover { background: var(--ink); color: var(--fog); }
+    .hero-cta .btn-primary, .hero-cta .btn-outline { padding: 0.75rem 1.3rem; }
 
     .hero-photo-wrap {
       position: relative;
@@ -418,7 +419,7 @@
     }
         /* ── PORTFOLIO TILE (video) + LIGHTBOX ── */
     .pf-tile {
-      position: relative; display: block; overflow: hidden; cursor: pointer;
+      position: relative; display: block; overflow: hidden; cursor: pointer; aspect-ratio: 2.45;
       text-decoration: none; background: #0b0c10;
       border: 1px solid rgba(184,154,90,0.4);
       transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
@@ -520,6 +521,7 @@
     <div class="hero-cta">
       <a href="#experience" class="btn-primary">View Experience</a>
       <a href="Angel_Alfaro_Resume.pdf" download class="btn-outline">Download Resume</a>
+      <a href="#portfolio" class="btn-outline">View Portfolio</a>
     </div>
     <div class="hero-stats">
       <div class="stat-item">
@@ -649,6 +651,80 @@
 </section>
 
 <!-- SKILLS -->
+<section id="portfolio" style="background: var(--ink); color: var(--fog);">
+  <div class="section-label" style="color: var(--gold-light);">Work</div>
+  <div class="divider"></div>
+  <h2 class="section-title" style="color: var(--fog);">Portfolio</h2>
+  <p style="color: rgba(245,244,240,0.55); font-size: 0.95rem; font-weight: 300; margin-bottom: 1rem; max-width: 620px;">
+    A showcase of my automation range: AI-driven and Python-based automation, Excel VBA macros and dashboards, and multi-tool builds that combine HTML/JavaScript, PowerShell, Task Scheduler, and Claude.
+  </p>
+  <p style="color: rgba(245,244,240,0.45); font-size: 0.85rem; font-weight: 300; font-style: italic; margin-bottom: 3rem; max-width: 620px;">
+    All examples use fully fictional data, never real company files, to protect confidentiality and move efficiently.
+  </p>
+      <div class="portfolio-grid">
+    <a class="pf-tile" href="#"
+       data-webm="media/opex_pnls.webm" data-mp4="media/opex_pnls.mp4" data-poster="media/opex_pnls_poster.png"
+       onmouseenter="const v=this.querySelector('video');v.play();"
+       onmouseleave="const v=this.querySelector('video');v.pause();v.currentTime=0;">
+      <video muted loop playsinline preload="metadata" poster="media/opex_pnls_poster.png">
+        <source src="media/opex_pnls.webm" type="video/webm">
+        <source src="media/opex_pnls.mp4"  type="video/mp4">
+      </video>
+      <div class="pf-scrim"></div>
+      <span class="pf-play">&#9656; click to play</span>
+      <div class="pf-cap">
+        <p class="k">Finance Automation · AI</p>
+        <h3 class="t">OPEX Ownership P&amp;Ls</h3>
+        <div class="pf-badges">
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4.5" width="16" height="15" rx="1.5"/><path d="M4 9.5h16M4 14.5h16M9.5 4.5v15"/></svg>Excel VBA</span>
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6"/><path d="M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"/></svg>SQL</span>
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5M6.5 6.5l3 3M14.5 14.5l3 3M17.5 6.5l-3 3M9.5 14.5l-3 3"/></svg>Claude</span>
+        </div>
+      </div>
+    </a>
+    <a class="pf-tile" href="#"
+       data-webm="media/royalty_model.webm" data-mp4="media/royalty_model.mp4" data-poster="media/royalty_model_poster.png"
+       onmouseenter="const v=this.querySelector('video');v.play();"
+       onmouseleave="const v=this.querySelector('video');v.pause();v.currentTime=0;">
+      <video muted loop playsinline preload="metadata" poster="media/royalty_model_poster.png">
+        <source src="media/royalty_model.webm" type="video/webm">
+        <source src="media/royalty_model.mp4"  type="video/mp4">
+      </video>
+      <div class="pf-scrim"></div>
+      <span class="pf-play">&#9656; click to play</span>
+      <div class="pf-cap">
+        <p class="k">Finance Automation</p>
+        <h3 class="t">Monthly Royalty Model</h3>
+        <div class="pf-badges">
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16c0-2 1.6-3 4-3s4-1 4-3-1.6-3-4-3H6"/><circle cx="7.4" cy="7" r=".9" fill="currentColor" stroke="none"/></svg>Python</span>
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6"/><path d="M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"/></svg>SQL</span>
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M7 9l3.5 3L7 15"/><path d="M12.5 15H16"/></svg>PowerShell</span>
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5M6.5 6.5l3 3M14.5 14.5l3 3M17.5 6.5l-3 3M9.5 14.5l-3 3"/></svg>Claude</span>
+        </div>
+      </div>
+    </a>
+    <a class="pf-tile" href="#"
+       data-webm="media/daily_snapshot.webm" data-mp4="media/daily_snapshot.mp4" data-poster="media/daily_snapshot_poster.png"
+       onmouseenter="const v=this.querySelector('video');v.play();"
+       onmouseleave="const v=this.querySelector('video');v.pause();v.currentTime=0;">
+      <video muted loop playsinline preload="metadata" poster="media/daily_snapshot_poster.png">
+        <source src="media/daily_snapshot.webm" type="video/webm">
+        <source src="media/daily_snapshot.mp4"  type="video/mp4">
+      </video>
+      <div class="pf-scrim"></div>
+      <span class="pf-play">&#9656; click to play</span>
+      <div class="pf-cap">
+        <p class="k">FP&amp;A Automation</p>
+        <h3 class="t">Daily Leadership Dashboard</h3>
+        <div class="pf-badges">
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4.5" width="16" height="15" rx="1.5"/><path d="M4 9.5h16M4 14.5h16M9.5 4.5v15"/></svg>Excel VBA</span>
+          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5M6.5 6.5l3 3M14.5 14.5l3 3M17.5 6.5l-3 3M9.5 14.5l-3 3"/></svg>Claude</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
 <section id="skills">
   <div class="section-label">Capabilities</div>
   <div class="divider"></div>
@@ -752,67 +828,11 @@
 </section>
 
 <!-- PORTFOLIO -->
-<section id="portfolio" style="background: var(--ink); color: var(--fog);">
-  <div class="section-label" style="color: var(--gold-light);">Work</div>
-  <div class="divider"></div>
-  <h2 class="section-title" style="color: var(--fog);">Portfolio</h2>
-  <p style="color: rgba(245,244,240,0.55); font-size: 0.95rem; font-weight: 300; margin-bottom: 1rem; max-width: 620px;">
-    A showcase of my automation range: AI-driven and Python-based automation, Excel VBA macros and dashboards, and multi-tool builds that combine HTML/JavaScript, PowerShell, Task Scheduler, and Claude.
-  </p>
-  <p style="color: rgba(245,244,240,0.45); font-size: 0.85rem; font-weight: 300; font-style: italic; margin-bottom: 3rem; max-width: 620px;">
-    All examples use fully fictional data, never real company files, to protect confidentiality and move efficiently.
-  </p>
-      <div class="portfolio-grid">
-    <a class="pf-tile" href="#"
-       data-webm="media/royalty_model.webm" data-mp4="media/royalty_model.mp4" data-poster="media/royalty_model_poster.png"
-       onmouseenter="const v=this.querySelector('video');v.play();"
-       onmouseleave="const v=this.querySelector('video');v.pause();v.currentTime=0;">
-      <video muted loop playsinline preload="metadata" poster="media/royalty_model_poster.png">
-        <source src="media/royalty_model.webm" type="video/webm">
-        <source src="media/royalty_model.mp4"  type="video/mp4">
-      </video>
-      <div class="pf-scrim"></div>
-      <span class="pf-play">&#9656; click to play</span>
-      <div class="pf-cap">
-        <p class="k">Finance Automation</p>
-        <h3 class="t">Monthly Royalty Model</h3>
-        <div class="pf-badges">
-          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16c0-2 1.6-3 4-3s4-1 4-3-1.6-3-4-3H6"/><circle cx="7.4" cy="7" r=".9" fill="currentColor" stroke="none"/></svg>Python</span>
-          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6"/><path d="M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"/></svg>SQL</span>
-          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M7 9l3.5 3L7 15"/><path d="M12.5 15H16"/></svg>PowerShell</span>
-          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5M6.5 6.5l3 3M14.5 14.5l3 3M17.5 6.5l-3 3M9.5 14.5l-3 3"/></svg>Claude</span>
-        </div>
-      </div>
-    </a>
-    <a class="pf-tile" href="#"
-       data-webm="media/daily_snapshot.webm" data-mp4="media/daily_snapshot.mp4" data-poster="media/daily_snapshot_poster.png"
-       onmouseenter="const v=this.querySelector('video');v.play();"
-       onmouseleave="const v=this.querySelector('video');v.pause();v.currentTime=0;">
-      <video muted loop playsinline preload="metadata" poster="media/daily_snapshot_poster.png">
-        <source src="media/daily_snapshot.webm" type="video/webm">
-        <source src="media/daily_snapshot.mp4"  type="video/mp4">
-      </video>
-      <div class="pf-scrim"></div>
-      <span class="pf-play">&#9656; click to play</span>
-      <div class="pf-cap">
-        <p class="k">FP&amp;A Automation</p>
-        <h3 class="t">Daily Leadership Dashboard</h3>
-        <div class="pf-badges">
-          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4.5" width="16" height="15" rx="1.5"/><path d="M4 9.5h16M4 14.5h16M9.5 4.5v15"/></svg>Excel VBA</span>
-          <span class="pf-badge"><svg class="pf-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5M6.5 6.5l3 3M14.5 14.5l3 3M17.5 6.5l-3 3M9.5 14.5l-3 3"/></svg>Claude</span>
-        </div>
-      </div>
-    </a>
-    <div class="portfolio-placeholder">
-      <div class="portfolio-icon">+</div>
-      <div class="portfolio-coming">Project Coming Soon</div>
-    </div>
-  </div>
-</section>
+
 
 
 <footer>
-  © 2025 Angel Alfaro
+  © 2026 Angel Alfaro
 </footer>
 
 <!-- Portfolio video lightbox -->
